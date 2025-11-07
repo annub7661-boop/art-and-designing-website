@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glossy Art Store - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    form {
+      max-width: 400px;
+      margin: 30px auto;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #4a33cc;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #7046ff;
+      box-shadow: 0 0 6px #7046ff;
+    }
+
+    .submit-btn {
+      background: linear-gradient(145deg, #a48aff, #7046ff);
+      color: white;
+      font-weight: 700;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 30px;
+      box-shadow:
+        inset 2px 2px 6px rgba(255,255,255,0.8),
+        inset -2px -2px 6px rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      font-size: 1.1rem;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(145deg, #7046ff, #3a00b8);
+      box-shadow:
+        0 6px 20px rgba(112, 70, 255, 0.85),
+        inset 1px 1px 4px rgba(255,255,255,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <header>Glossy Art Store</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p style="text-align: center; max-width: 500px; margin: 0 auto 20px;">
+      If you have any questions or want to commission a custom painting, please fill out the form below!
+    </p>
+    <form id="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button class="submit-btn" type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Glossy Art Store. All rights reserved.
+  </footer>
+
+ 

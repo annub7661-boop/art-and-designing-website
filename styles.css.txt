@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f8f9ff, #dbe1ff);
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background: linear-gradient(145deg, #6a42f4, #8e6fff);
+  padding: 30px 40px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.7);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 6px 25px rgba(106, 66, 244, 0.7);
+  user-select: none;
+}
+
+/* Menu Bar */
+nav {
+  background: #7f56f2;
+  box-shadow: 0 4px 15px rgba(127, 86, 242, 0.7);
+  border-radius: 15px;
+  margin: 20px 50px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 40px;
+  background: linear-gradient(145deg, #a48aff, #7046ff);
+  box-shadow:
+    inset 2px 2px 6px rgba(255, 255, 255, 0.8),
+    inset -2px -2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: linear-gradient(145deg, #7046ff, #3a00b8);
+  box-shadow:
+    0 6px 20px rgba(112, 70, 255, 0.85),
+    inset 1px 1px 4px rgba(255,255,255,0.7);
+}
+
+/* Main content */
+main {
+  flex-grow: 1;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px 40px;
+  background: linear-gradient(145deg, #f5f7ff, #d9dfff);
+  border-radius: 20px;
+  box-shadow:
+    10px 10px 20px #bebfcf,
+    -10px -10px 20px #ffffff;
+}
+
+main h2 {
+  color: #5a39e0;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0 0 8px #a48aff;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(145deg, #6a42f4, #8e6fff);
+  padding: 15px 40px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -5px 25px rgba(106, 66, 244, 0.7);
+  user-select: none;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  main {
+    margin: 20px;
+    padding: 15px 20px;
+  }
+}

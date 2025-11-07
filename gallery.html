@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glossy Art Store - Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .paintings-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .painting-card {
+      background: linear-gradient(145deg, #ececff, #d6dbff);
+      border-radius: 20px;
+      box-shadow:
+        inset 4px 4px 10px #c2c8f7,
+        inset -4px -4px 10px #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .painting-card:hover {
+      transform: translateY(-10px);
+      box-shadow:
+        0 15px 25px rgba(90, 57, 224, 0.6),
+        inset 4px 4px 15px #c2c8f7,
+        inset -4px -4px 15px #ffffff;
+    }
+
+    .painting-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(90, 57, 224, 0.3);
+      margin-bottom: 15px;
+      user-select: none;
+    }
+
+    .painting-title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #4a33cc;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .painting-artist {
+      font-style: italic;
+      color: #6b5ecb;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .painting-price {
+      font-weight: 600;
+      color: #3d25b8;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+
+    .buy-btn {
+      background: linear-gradient(145deg, #a48aff, #7046ff);
+      color: white;
+      font-weight: 700;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 30px;
+      box-shadow:
+        inset 2px 2px 6px rgba(255,255,255,0.8),
+        inset -2px -2px 6px rgba(0,0,0,0.25);
+      cursor: pointer;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+
+    .buy-btn:hover {
+      background: linear-gradient(145deg, #7046ff, #3a00b8);
+      box-shadow:
+        0 6px 20px rgba(112, 70, 255, 0.85),
+        inset 1px 1px 4px rgba(255,255,255,0.7);
+    }
+  </style>
+</head>
+<body>
+
+  <header>Glossy Art Store</header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Our Gallery</h2>
+    <div class="paintings-grid">
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Sunset Glow" />
+        <div class="painting-title">Sunset Glow</div>
+        <div class="painting-artist">by Maria Lopez</div>
+        <div class="painting-price">$450</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in Sunset Glow!')">Buy Now</button>
+      </div>
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Abstract Dreams" />
+        <div class="painting-title">Abstract Dreams</div>
+        <div class="painting-artist">by Kevin Brown</div>
+        <div class="painting-price">$550</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in Abstract Dreams!')">Buy Now</button>
+      </div>
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?auto=format&fit=crop&w=400&q=80" alt="Blue Serenity" />
+        <div class="painting-title">Blue Serenity</div>
+        <div class="painting-artist">by Sophia Chan</div>
+        <div class="painting-price">$620</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in Blue Serenity!')">Buy Now</button>
+      </div>
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Wildflower Field" />
+        <div class="painting-title">Wildflower Field</div>
+        <div class="painting-artist">by Liam Smith</div>
+        <div class="painting-price">$380</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in Wildflower Field!')">Buy Now</button>
+      </div>
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=400&q=80" alt="City Lights" />
+        <div class="painting-title">City Lights</div>
+        <div class="painting-artist">by Olivia Martinez</div>
+        <div class="painting-price">$720</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in City Lights!')">Buy Now</button>
+      </div>
+      <div class="painting-card">
+        <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80" alt="Mystic Forest" />
+        <div class="painting-title">Mystic Forest</div>
+        <div class="painting-artist">by Ethan Davis</div>
+        <div class="painting-price">$500</div>
+        <button class="buy-btn" onclick="alert('Thank you for your interest in Mystic Forest!')">Buy Now</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Glossy Art Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
